@@ -10,14 +10,11 @@ Simply Awesome <b>Blog Starter</b> built with <b>SvelteKit</b> and <b>❤</b>
 </p>
 
 <p align="center"><img src="https://img.shields.io/github/languages/top/kwchang0831/svelte-QWER?color=%23ff3e00&logo=Svelte" alt="Language" />
-<a href="https://github.com/kwchang0831/svelte-QWER/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/kwchang0831/svelte-QWER" alt="License"></a>
+<a href="https://github.com/kwchang0831/svelte-QWER/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/kwchang0831/svelte-QWER" alt="License"></a> <a href="https://app.netlify.com/sites/svelte-qwer/deploys"><img src="https://api.netlify.com/api/v1/badges/0577fd35-8359-4a72-a266-58960db5cddd/deploy-status" alt="Netlify Status" /></a>
 </p>
-
 <p align="center">
 <a href="https://docs-svelte-qwer.vercel.app/"><img src="https://img.shields.io/badge/📝 Documentation-DOCS-informational?style=for-the-badge" alt="QWER DOCS"></a>
 </p>
-
-<p align="center"><img style="float:middle" width="auto" alt="PAGESPEED" src="https://raw.githubusercontent.com/gist/kwchang0831/acd18fa5e12de9be28a34617beffe5de/raw/metrics.pagespeed.svg"></p>
 
 ## 🎉 Try [QWER](https://github.com/kwchang0831/svelte-QWER/) out
 
@@ -44,66 +41,6 @@ npx degit kwchang0831/svelte-QWER my-blog
    ```bash
    pnpm dev
    ```
-
-1. Clean auto-generated files. (Do not commit those files to the repo.)
-
-   ```bash
-   pnpm clean
-   ```
-
-## 🚀 Deploy on Vercel
-
-1. Install Vercel CLI.
-
-   ```bash
-   npm i -g vercel
-   ```
-
-1. Login.
-
-   ```bash
-   vercel login
-   ```
-
-1. Deploy.
-
-   ```bash
-   vercel --prod
-   ```
-
-## ✨ Features
-
-- ⚡ Super fast site performance. Near **Perfect** [PageSpeed](https://pagespeed.web.dev/) score.
-
-- 🤗 SEO ready with meta, [Open Graph](https://ogp.me/), [Schema](https://schema.org/), [JSON-LD](https://json-ld.org/), [microformats2](https://indieweb.org/microformats2).
-
-- 🔎 On-site Search.
-
-- 📱 Mobile-First / Responsive design.
-
-- ✍️ Write post with [Markdown syntax](https://www.markdownguide.org/basic-syntax/).
-
-- 🧮 🧪 Wirte Math and Chemical formulas with [TeX Syntax](https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf) via [Katex](https://katex.org/) & [mhchem](https://mhchem.github.io/MathJax-mhchem/).
-
-- 📁 Folder-based organization for creating posts.
-
-- 🏷️ Multi-Tags filtering.
-
-- 📄 Auto-Generate Table of Content for posts.
-
-- 📦 Out-of-the-box support for [Atom feed](https://validator.w3.org/feed/docs/atom.html), Sitemap, [PWA](https://web.dev/progressive-web-apps/), [JSON Feed](https://www.jsonfeed.org/).
-
-- 🖼️ Automatic image optimization via [vite-imagetools](https://github.com/JonasKruckenberg/imagetools).
-
-- ⚙️ Support embedding Svelte components and Javascript with Markdown.
-
-- 💬 Supports [Giscus](https://github.com/giscus/giscus) - a comments system powerd by Github Discussions.
-
-- 💄 Utilizes [UnoCSS](https://github.com/unocss/unocss) - the instant on-demand atomic CSS engine.
-
-- 🌐 i18n via [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n).
-
-- 🚀 Deploy the blog **Free** on [Vercel](https://vercel.com/) or [Netlify](https://Netlify.com/).
 
 ## 📚 Learn More
 
