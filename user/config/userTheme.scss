@@ -1,0 +1,8 @@
+// Check out src/lib/styles/defaultTheme.scss
+// Overwrite the variable with your preferences
+// Don't forget the maintain level of structure for variables
+
+:root {
+  --qwer-bg-img-light: url('/day.jpg');
+  --qwer-bg-img-dark: url('/night.jpg');
+}

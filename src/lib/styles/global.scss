@@ -1,0 +1,52 @@
+body {
+  background-color: var(--qwer-bg-color);
+  color: var(--qwer-text-color);
+}
+
+body::after {
+  content: '';
+  background-image: var(--qwer-bg-img-light);
+  background-repeat: var(--qwer-bg-repeat);
+  background-size: var(--qwer-bg-size);
+  opacity: var(--qwer-bg-op);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+body.dark::after {
+  content: '';
+  background-image: var(--qwer-bg-img-dark);
+  background-repeat: var(--qwer-bg-repeat);
+  background-size: var(--qwer-bg-size);
+  opacity: var(--qwer-bg-op);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.btn {
+  --at-apply: 'cursor-pointer shrink-0 text-center px-2 py-2 rounded-lg';
+}
+
+.btn-ghost {
+  --at-apply: 'border-transparent bg-transparent border-1';
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn {
+    &:hover {
+      background-color: var(--qwer-btn-hover-color);
+    }
+  }
+}
+
+.tippy-box {
+  --at-apply: 'text-base text-center';
+}
