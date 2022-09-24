@@ -49,7 +49,7 @@ export const headConfig: Site.Head = {
       : [
           // For Production Enviroment
           '<link rel="preconnect" href="https://plausible.kwchang0831.dev" />',
-          '<script defer data-domain="svelte-qwer.netlify.app" src="https://plausible.kwchang0831.dev/js/plausible.js"></script>',
+          '<script defer type="text/partytown" data-domain="svelte-qwer.netlify.app" src="https://plausible.kwchang0831.dev/js/plausible.js"></script>',
         ],
 };
 
