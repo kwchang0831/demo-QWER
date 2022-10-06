@@ -68,7 +68,7 @@
     "@sveltejs/adapter-node": "1.0.0-next.96",
     "@sveltejs/adapter-static": "1.0.0-next.44",
     "@sveltejs/adapter-vercel": "1.0.0-next.77",
-    "@sveltejs/kit": "1.0.0-next.510",
+    "@sveltejs/kit": "1.0.0-next.511",
     "@threlte/core": "^4.3.2",
     "@threlte/extras": "^4.3.0",
     "@types/flexsearch": "^0.7.3",

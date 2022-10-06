@@ -19,7 +19,7 @@ importers:
       '@sveltejs/adapter-node': 1.0.0-next.96
       '@sveltejs/adapter-static': 1.0.0-next.44
       '@sveltejs/adapter-vercel': 1.0.0-next.77
-      '@sveltejs/kit': 1.0.0-next.510
+      '@sveltejs/kit': 1.0.0-next.511
       '@threlte/core': ^4.3.2
       '@threlte/extras': ^4.3.0
       '@types/flexsearch': ^0.7.3
@@ -80,7 +80,7 @@ importers:
       '@sveltejs/adapter-node': 1.0.0-next.96
       '@sveltejs/adapter-static': 1.0.0-next.44
       '@sveltejs/adapter-vercel': 1.0.0-next.77
-      '@sveltejs/kit': 1.0.0-next.510_svelte@3.50.1+vite@3.1.6
+      '@sveltejs/kit': 1.0.0-next.511_svelte@3.50.1+vite@3.1.6
       '@threlte/core': 4.3.2
       '@threlte/extras': 4.3.0_three@0.145.0
       '@types/flexsearch': 0.7.3
@@ -884,8 +884,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.510_svelte@3.50.1+vite@3.1.6:
-    resolution: {integrity: sha512-i96sRqEzNP1dOaQQ2aR38H6emdQJhc1qr5KqNyjqi3Wb0sDAG49cQxMRUOdydkVKZkG/o7PvC5qdyblVfalAdA==}
+  /@sveltejs/kit/1.0.0-next.511_svelte@3.50.1+vite@3.1.6:
+    resolution: {integrity: sha512-A/fxd4qHWDD07Mjo6qEEEfsBEkoj5C4/dPSzx6xPUoWmPvRPhU8t+P0oMc8BOn5YHOhPDq3coH8bmafbh73zKg==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
