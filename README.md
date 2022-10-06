@@ -6,7 +6,7 @@ Simply Awesome <b>Blog Starter</b> built with <b>SvelteKit</b> and <b>❤</b>
 </p>
 
 <p align="center">
-<a href="https://svelte-qwer.netlify.app/" target="_blank"><img src="https://raw.githubusercontent.com/kwchang0831/demo-QWER/main/user/assets/preview.webp" style="border-radius: 10px; object-fit: cover;" /></a>
+<a href="https://svelte-qwer.netlify.app/"><img src="https://raw.githubusercontent.com/kwchang0831/demo-QWER/main/user/assets/preview.webp" style="border-radius: 25px; object-fit: cover;" /></a>
 </p>
 
 ## 🎉 Try [QWER](https://github.com/kwchang0831/svelte-QWER/) out
