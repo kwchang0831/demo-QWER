@@ -11,14 +11,14 @@ tags:
   - [Journal]
 ---
 <script lang="ts">
-  import Custom from '$custom/custom.svelte'
+  import BoxCanvas from '$custom/boxCanvas.svelte'
 </script>
 
 ## 🎲 Simple Demo
 
 This box is interactive. Touch it.
 
-<Custom/>
+<BoxCanvas/>
 
 ## 👍 End
 

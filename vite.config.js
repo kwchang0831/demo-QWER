@@ -1,7 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import Unocss from 'unocss/vite';
 import { presetTypography, presetIcons, presetUno } from 'unocss';
-import { extractorSvelte } from '@unocss/core';
+import extractorSvelte from '@unocss/extractor-svelte';
 import { presetScrollbar } from 'unocss-preset-scrollbar';
 import transformerDirective from '@unocss/transformer-directives';
 import transformerVariantGroup from '@unocss/transformer-variant-group';
@@ -9,7 +9,6 @@ import transformerCompileClass from '@unocss/transformer-compile-class';
 import { imagetools } from 'vite-imagetools';
 import path from 'node:path';
 import { partytownVite } from '@builder.io/partytown/utils';
-
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 const pathMainPkg = fileURLToPath(new URL('package.json', import.meta.url));
@@ -34,11 +33,11 @@ const config = {
     __VERSION_QWER__: qwerPkg,
   },
   ssr: {
-    noExternal: ['three', 'troika-three-text'],
+    noExternal: ['three'],
   },
   plugins: [
     Unocss({
-      extractors: [extractorSvelte],
+      extractors: [extractorSvelte()],
       presets: [
         presetUno(),
         presetScrollbar(),

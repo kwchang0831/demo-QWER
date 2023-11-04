@@ -12,7 +12,7 @@
    */
   import { page } from '$app/stores';
 
-  let className: string = '';
+  let className = '';
   export { className as class };
 
   import { slide } from 'svelte/transition';
@@ -39,14 +39,20 @@
 </script>
 
 {#if nav}
-  <div on:message on:mouseenter={show} on:mouseleave={hide} class="relative cursor-pointer {className ?? ''}">
+  <div
+    role="button"
+    tabindex="0"
+    on:message
+    on:mouseenter={show}
+    on:mouseleave={hide}
+    class="relative cursor-pointer {className ?? ''}">
     <slot>
       {#if nav.url}
         <a href={nav.url} target={nav.target} rel={nav.rel} class="flex items-center cursor-pointer gap-2">
           {nav.name}
           {#if 'links' in nav && nav.links}
             <span
-              class="!w-[1.5rem] !h-[1.5rem] display-inline-block "
+              class="!w-[1.5rem] !h-[1.5rem] display-inline-block"
               class:i-mdi-chevron-up={nav.orientation === 0}
               class:i-mdi-chevron-right={nav.orientation === 1}
               class:i-mdi-chevron-down={nav.orientation === 2}
@@ -58,7 +64,7 @@
           {nav.name}
           {#if 'links' in nav && nav.links}
             <span
-              class="!w-[1.5rem] !h-[1.5rem] display-inline-block "
+              class="!w-[1.5rem] !h-[1.5rem] display-inline-block"
               class:i-mdi-chevron-up={nav.orientation === 0}
               class:i-mdi-chevron-right={nav.orientation === 1}
               class:i-mdi-chevron-down={nav.orientation === 2}
@@ -70,7 +76,7 @@
 
     {#if active && 'links' in nav && nav.links}
       <div
-        transition:slide={{ duration: 300, easing: quartIn }}
+        transition:slide|global={{ duration: 300, easing: quartIn }}
         class:pos-up={nav.orientation === 0}
         class:pos-right={nav.orientation === 1}
         class:pos-down={nav.orientation === 2}
@@ -112,7 +118,7 @@
                   : ''}">
                 {#if link.url}
                   <a
-                    data-sveltekit-prefetch={link.prefetch ? '' : 'off'}
+                    data-sveltekit-preload-data={link.prefetch ? '' : 'off'}
                     href={link.url}
                     target={nav.target}
                     rel={nav.rel}
@@ -129,6 +135,8 @@
                   </a>
                 {:else}
                   <span
+                    role="button"
+                    tabindex="0"
                     on:click={() => {
                       if (link.url) hide();
                     }}

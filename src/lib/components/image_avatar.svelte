@@ -6,8 +6,8 @@
   let className: string | undefined = undefined;
   export { className as class };
 
-  export let width: string = '128px';
-  export let height: string = '128px';
+  export let width = '128px';
+  export let height = '128px';
 
   let loaded = false;
   onMount(() => {
@@ -17,7 +17,7 @@
 
 <figure class="avatar select-none">
   {#if loaded && siteConfig.author.avatar && siteConfig.author.avatar_128}
-    <picture in:fade={{ duration: 300, delay: 300 }} out:fade={{ duration: 300 }} class="u-photo">
+    <picture in:fade|global={{ duration: 300, delay: 300 }} out:fade|global={{ duration: 300 }} class="u-photo">
       <!--
         /@imagetools/... get transformed to ./_app/immutable/assets/...
         while causes problem to page that is 2+ level of depth

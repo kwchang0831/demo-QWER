@@ -11,7 +11,16 @@
   }
 </script>
 
-<div class="flex justify-start items-center cursor-pointer" on:click={toggle}>
+<div
+  role="button"
+  tabindex="0"
+  class="flex justify-start items-center cursor-pointer"
+  on:click={toggle}
+  on:keydown={(e) => {
+    if (e.key === 'Enter') {
+      toggle();
+    }
+  }}>
   <div
     class="{expanded ? 'i-fluent-emoji-flat-open-file-folder' : 'i-fluent-emoji-flat-file-folder'} !w8 !h8 shrink-0" />
   <div class="px2">

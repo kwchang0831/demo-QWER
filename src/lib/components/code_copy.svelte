@@ -2,8 +2,8 @@
   import { dev } from '$app/environment';
   import { fly, fade } from 'svelte/transition';
 
-  let hovered: boolean = false;
-  let copied: boolean = false;
+  let hovered = false;
+  let copied = false;
   let codeblock: HTMLElement;
 
   function handleEnter() {
@@ -33,21 +33,27 @@
   }
 </script>
 
-<div bind:this={codeblock} on:mouseenter={handleEnter} on:mouseleave={handleLeave} class="relative overflow-hidden">
+<div
+  bind:this={codeblock}
+  on:mouseenter={handleEnter}
+  on:mouseleave={handleLeave}
+  class="relative overflow-hidden"
+  role="button"
+  tabindex="0">
   {#if hovered}
     <button
       aria-label="Copy all codes"
       type="button"
-      in:fly={{ y: -25, duration: 300, delay: 300 }}
-      out:fly={{ y: -25, duration: 300 }}
+      in:fly|global={{ y: -25, duration: 300, delay: 300 }}
+      out:fly|global={{ y: -25, duration: 300 }}
       on:click={handleCopy}
       class="group absolute z-40 right-2 top-2 p2 h-10 w-10 rounded-xl border-2 bg-gray-700 dark:bg-gray-800 {copied
         ? 'border-green-400 focus:border-green-500 focus:outline-none'
         : 'border-gray-300 hover:border-sky-500'}">
       {#key copied}
         <div
-          in:fade={{ duration: 300, delay: 300 }}
-          out:fade={{ duration: 300 }}
+          in:fade|global={{ duration: 300, delay: 300 }}
+          out:fade|global={{ duration: 300 }}
           class:i-carbon-document-blank={!copied}
           class:i-carbon-document-tasks={copied}
           class="!w5 !h5 color-white m-auto" />

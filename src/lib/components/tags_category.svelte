@@ -3,7 +3,7 @@
   import Tag from '$lib/components/tag.svelte';
   import type { Tags } from '$lib/types/tags';
 
-  let className: any = undefined;
+  let className: string | undefined = undefined;
   export { className as class };
 
   export let expanded = false;
@@ -16,6 +16,8 @@
 
 <!-- {#if data.name !== 'tags'} -->
 <div
+  role="button"
+  tabindex="0"
   class="flex justify-between items-center border-b-1 border-black dark:border-white py2 cursor-pointer {className ??
     ''}"
   on:click={() => {
@@ -40,14 +42,14 @@
 </div>
 
 {#if expanded && tags}
-  <div transition:slide={{ duration: 300 }} class="flex flex-row flex-wrap my-2">
+  <div transition:slide|global={{ duration: 300 }} class="flex flex-row flex-wrap my-2">
     {#each tags as t}
       <Tag data={t} />
     {/each}
   </div>
 {/if}
 <!-- {:else if tags}
-  <div transition:slide={{ duration: 300 }} class="flex flex-row flex-wrap">
+  <div transition:slide|global={{ duration: 300 }} class="flex flex-row flex-wrap">
     {#each tags as t}
       <Tag data={t} />
     {/each}
